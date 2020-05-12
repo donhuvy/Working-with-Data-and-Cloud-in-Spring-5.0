@@ -1,11 +1,10 @@
 Manifest-Version: 1.0
+Built-By: Do Nhu Vy
+Build-Jdk: 14.0.1
 Implementation-Title: Spring-Data-JPA-Trial-Run
-Implementation-Version: 0.0.1-SNAPSHOT
-Built-By: sathyanarayanane
+Implementation-Version: 3.0.0-SNAPSHOT
 Implementation-Vendor-Id: com.mastering.spring
-Build-Jdk: 1.8.0_144
-Implementation-URL: http://projects.spring.io/spring-boot/Spring-Data-
- JPA-Trial-Run/
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/Spring-Data-JPA-Trial-Run
 Created-By: Maven Integration for Eclipse
-Implementation-Vendor: Pivotal Software, Inc.
 

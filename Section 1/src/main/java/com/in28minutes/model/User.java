@@ -13,58 +13,58 @@ import javax.persistence.OneToMany;
 @NamedQuery(name = "User.findUsersWithNameUsingNamedQuery", query = "select u from User u where u.name = ?1")
 public class User {
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Long id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
 
-	private String userid;
+    private String userid;
 
-	private String name;
+    private String name;
 
-	@OneToMany(mappedBy = "user")
-	private List<Todo> todos;
+    @OneToMany(mappedBy = "user")
+    private List<Todo> todos;
 
-	public User() {// Make JPA Happy
+    public User() {// Make JPA Happy
 
-	}
+    }
 
-	public User(String userid, String name) {
-		super();
-		this.userid = userid;
-		this.name = name;
-	}
+    public User(String userid, String name) {
+        super();
+        this.userid = userid;
+        this.name = name;
+    }
 
-	public String getUserid() {
-		return userid;
-	}
+    public String getUserid() {
+        return userid;
+    }
 
-	public void setUserid(String userid) {
-		this.userid = userid;
-	}
+    public void setUserid(String userid) {
+        this.userid = userid;
+    }
 
-	public String getName() {
-		return name;
-	}
+    public String getName() {
+        return name;
+    }
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    public void setName(String name) {
+        this.name = name;
+    }
 
-	public Long getId() {
-		return id;
-	}
+    public Long getId() {
+        return id;
+    }
 
-	public List<Todo> getTodos() {
-		return todos;
-	}
+    public List<Todo> getTodos() {
+        return todos;
+    }
 
-	public void setTodos(List<Todo> todos) {
-		this.todos = todos;
-	}
+    public void setTodos(List<Todo> todos) {
+        this.todos = todos;
+    }
 
-	@Override
-	public String toString() {
-		return String.format("User [id=%s, userid=%s, name=%s, todos=%d]", id,
-				userid, name, todos!=null ? todos.size()  : 0 );
-	}
+    @Override
+    public String toString() {
+        return String.format("User [id=%s, userid=%s, name=%s, todos=%d]", id, userid, name,
+                todos != null ? todos.size() : 0);
+    }
 }
